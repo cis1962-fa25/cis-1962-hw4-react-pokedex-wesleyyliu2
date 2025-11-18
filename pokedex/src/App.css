@@ -1,0 +1,94 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.app h1 {
+  text-align: center;
+  color: #1a252f;
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.view-switcher {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.view-switcher button {
+  padding: 12px 28px;
+  border: 3px solid #5b9bd5;
+  background: white;
+  color: #5b9bd5;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.view-switcher button:hover:not(:disabled) {
+  background: #5b9bd5;
+  color: white;
+}
+
+.view-switcher button.active {
+  background: #5b9bd5;
+  color: white;
+  box-shadow: 0 2px 8px rgba(91, 155, 213, 0.3);
+}
+
+.view-switcher button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #fff3cd;
+  color: #856404;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border: 2px solid #ffc107;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 25px;
+  color: #6c757d;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.confirm-dialog {
+  max-width: 550px;
+  width: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.confirm-dialog h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1a252f;
+  font-size: 1.5em;
+}
+
+.confirm-dialog p {
+  margin-bottom: 25px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
