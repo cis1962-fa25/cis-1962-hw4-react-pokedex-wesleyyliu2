@@ -51,6 +51,10 @@ function App() {
         const limit = Math.min(PAGE_SIZE, MAX_POKEMON_ID - offset);
         const data = await pokemonAPI.getPokemon(limit, offset);
         setPokemon(data);
+        // Some clarification: we only add pokemon to map
+        // as we open page by page. If we open box with
+        // pokemon not in here, it will be lazily fetched
+        // through the next useEffect
         addPokemonToMap(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to fetch Pokemon');
